@@ -1,24 +1,15 @@
-getComputerChoice(){
+function getComputerChoice() {
+    const choices = ["rock", "paper", "scissors"];
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
 
 }
 
 
-function game(){
-
-    function playRound(playerSelection, computerSelection){
-       
-
-        if(playerScore === 5 || computerScore ===5){
-            declareWinner();
-         }
-    }
-
-}
-
-
-
-
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-
-console.log(playRound(playerSelection, computerSelection));
+function playRound(playerSelection, computerSelection) {
+    // your code here!
+  }
+   
+  const playerSelection = "rock";
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
