@@ -7,3 +7,7 @@ const playerSelection = "rock";
 const computerSelection = getComputerChoise();
 
 console.log(playRound(playerSelection, computerSelection));
+
+function game(){
+    
+}
