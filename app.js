@@ -1,6 +1,4 @@
-getComputerChoice(){
-
-}
+getComputerChoice()
 
 
 
