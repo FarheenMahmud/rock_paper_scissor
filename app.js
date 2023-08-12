@@ -31,7 +31,11 @@ function playRound(playerSelection, computerSelection) {
             return "You lose! Scissors beats paper";
         }
     
-        else if(playerSelection === )
+        else if(playerSelection === "scissors" && computerSelection === "paper") {
+            return "You win! Scissors beats paper";
+        }
+
+        
 
     }
 
