@@ -6,13 +6,20 @@ function getComputerChoice() {
 }
 
 
-function playRound(playerSelection, computerSelection) {
+function playRound() {
+      
+  
+    const computerSelection = getComputerChoice();
     
-    var playerSelection = prompt("Rock, paper, or scissors?");
+    const playerSelection = prompt("Rock, paper, or scissors?");
 
     const choices = ["rock", "paper", "scissors"];
 
-    var rps = choices.indexOf(playerSelection.toLowerCase());
+    const rps = choices.indexOf(playerSelection.toLowerCase());
+
+    
+
+   
 
     if (rps > -1) 
  //main conditional
@@ -28,11 +35,23 @@ function playRound(playerSelection, computerSelection) {
         }
     
         else if(playerSelection === "paper" && computerSelection === "scissors" ){
-            return "You lose! Scissors beats paper";
+            return "You lose! Scissors beats paper!";
         }
     
         else if(playerSelection === "scissors" && computerSelection === "paper") {
-            return "You win! Scissors beats paper";
+            return "You win! Scissors beats paper!";
+        }
+
+        else if(playerSelection === "rock" && computerSelection === "scissors"){
+            return "You win! Rock beats scissors!";
+        }
+
+        else if(playerSelection === "scissors" && computerSelection === "rock"){
+            return "You lose! Rock beats scissors!";
+        }
+
+        else {
+            return "it's a tie!";
         }
 
         
@@ -46,8 +65,5 @@ function playRound(playerSelection, computerSelection) {
   
   }
 
-   
-  const playerSelection = "rock";
-  const computerSelection = getComputerChoice();
-
-  console.log(getComputerChoice());
+ 
+  console.log(playRound());
