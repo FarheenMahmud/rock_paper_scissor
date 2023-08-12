@@ -6,20 +6,11 @@ function getComputerChoice() {
 }
 
 
-function playRound() {
+function playRound(playerSelection, computerSelection) {
       
-  
-    const computerSelection = getComputerChoice();
-    
-    const playerSelection = prompt("Rock, paper, or scissors?");
-
     const choices = ["rock", "paper", "scissors"];
 
     const rps = choices.indexOf(playerSelection.toLowerCase());
-
-    
-
-   
 
     if (rps > -1) 
  //main conditional
@@ -62,8 +53,14 @@ function playRound() {
         alert ("Invalid choice!");
     }
 
-  
+
   }
 
- 
-  console.log(playRound());
+
+   // Get computer choice
+const computerSelection = getComputerChoice();
+
+// Prompt user for input
+const playerSelection = prompt("Rock, paper, or scissors?");
+  
+  console.log(playRound(playerSelection, computerSelection));
