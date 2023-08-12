@@ -8,15 +8,17 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
-    if(playerSelection === rock && computerSelection === paper){
-        return "You win! Paper beats Rock!"
+    if(playerSelection === "paper" && computerSelection === "rock"){
+        return "You win! Paper beats Rock!";
     }
 
-    else if(playerSelection === paper && computerSelection === rock){
-        return "You lose! Rock beats paper!"
+    else if(playerSelection === "paper" && computerSelection === "rock"){
+        return "You lose! Rock beats paper!";
     }
 
-    else if(playerSelection === "Paper beats rock!")
+    else if(playerSelection === "paper" && computerSelection === "scissors" ){
+        return "You lose! Scissors beats paper";
+    }
 
   }
 
