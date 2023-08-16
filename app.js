@@ -77,11 +77,12 @@ function playRound(playerSelection, computerSelection) {
     else if(result.includes("lose")){
         computerScore++;
     }
-
+    
+    console.log(result);
  }
 
     if(playerScore > computerScore){
-        return "YOU WIN! OMEDETOU! (* ^ ω ^) "
+        return "YOU WON THE GAME! OMEDETOU! (* ^ ω ^) "
     }
 
     else if (playerScore < computerScore) {
