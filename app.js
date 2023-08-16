@@ -62,7 +62,6 @@ function playRound(playerSelection, computerSelection) {
     
  let playerScore = 0;
  let computerScore = 0;
- let roundResults = [];
 
  for(let round = 1; round <= 5; round++){
 
@@ -79,18 +78,7 @@ function playRound(playerSelection, computerSelection) {
         computerScore++;
     }
 
-
-    roundResults.push(result);
-
-    console.log("Round results:");
-    roundResults.forEach((roundResult, index) =>{
-        console.log(`Round ${index + 1}: ${roundResult}`)
-    }
-    
-    )
-
-    }
-    
+ }
 
     if(playerScore > computerScore){
         return "YOU WIN! OMEDETOU! (* ^ ω ^) "
