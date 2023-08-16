@@ -97,4 +97,4 @@ function playRound(playerSelection, computerSelection) {
 
    
   
-  console.log(playRound(playerSelection, computerSelection));
+ game();
