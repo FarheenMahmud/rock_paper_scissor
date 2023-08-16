@@ -59,14 +59,41 @@ function playRound(playerSelection, computerSelection) {
 
 
   function game(){
+ let playerScore = 0;
+ let computerScore = 0;
+
+ for(let round = 1; round <= 5; round++){
+
+    const computerSelection = getComputerChoice;
+    const playerSelection = prompt("Rock, paper, or scissors?");
+
+    const result = playRound(playerSelection, computerSelection);
+
+    if(result.includes("win")){
+        playerScore++;
+    }
+
+    else if(result.includes("lose")){
+        computerScore++;
+    }
+
+ }
+
+    if(playerScore > computerScore){
+        return "YOU WIN! OMEDETOU! (* ^ ω ^) "
+    }
+
+    else if (playerScore < computerScore) {
+        return "YOU LOSE! (*μ_μ)"
+    }
+    
+    else if (playerScore = computerScore) {
+        return "IT'S A TIE! (￣▽￣)"
+    }
 
   }
 
 
-   // Get computer choice
-const computerSelection = getComputerChoice();
-
-// Prompt user for input
-const playerSelection = prompt("Rock, paper, or scissors?");
+   
   
   console.log(playRound(playerSelection, computerSelection));
