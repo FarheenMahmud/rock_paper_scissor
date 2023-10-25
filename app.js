@@ -6,7 +6,14 @@ function getComputerChoice() {
 }
 
 //ADD FIVE ROUND LOOP AND TERMINATE IT TO DECLARE THE WINNER
-//Add UI
+//Add 3 buttons one for each selection
+/*add an event listener to the buttons that call your playRound function with the 
+correct playerSelection 
+Add a div for displaying results and change all of your console.log s into DOM methods
+Display the running score, and announce a winner of the game once one player reaches 5 points
+
+*/
+
 
 function playRound(playerSelection, computerSelection) {
       
