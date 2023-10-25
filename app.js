@@ -6,6 +6,7 @@ function getComputerChoice() {
 }
 
 //ADD FIVE ROUND LOOP AND TERMINATE IT TO DECLARE THE WINNER
+//Add UI
 
 function playRound(playerSelection, computerSelection) {
       
